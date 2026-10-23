@@ -14,17 +14,23 @@
       <p class="tagline">Discover high-resolution visuals across the web.</p>
     </div>
     <!-- Search Form -->
-    <form id="search-form" class="search-form">
-      <label for="search-input" class="sr-only">Search images</label>
+    <form id="search-form">
+      <label for="search-input">Search images</label>
       <input 
         id="search-input" 
         type="search" 
-        placeholder="Type to search images..." 
-        required 
-      />
+        placeholder="Try cats...">
       <button id="search-btn" type="submit">Search</button>
-      <button id="clear-btn" type="reset">Clear</button>
     </form>
+
+    <p id="result-count">Search for a topic to explore images.</p>
+
+    <div id="results" class="results-grid"></div>
+
+    <div id="empty-state">
+      <p class="empty-title">Search to see results</p>
+      <p class="empty-copy">Your images will appear here.</p>
+    </div>
   </header>
   <main class="container">
     <!-- Feature 2: Category Chips -->
